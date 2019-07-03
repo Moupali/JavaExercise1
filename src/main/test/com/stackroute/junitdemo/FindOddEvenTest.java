@@ -39,7 +39,17 @@ public class FindOddEvenTest
 
 
         assertEquals("Tom",result);
-    }
+ }
+    @Test
+    public void  forGivenCharacter()
+    {
+        FindOddEven obj=new FindOddEven();
+        //Act
+        String result=obj.OddEven('a');
 
+
+        assertEquals("Enter a valid Integer",result);
+    }
+    
 
 }
