@@ -12,6 +12,7 @@ public class FindOddEven {
         if(Character.isLetter(num))
         {
             return "Enter a valid integer";
+        }
 
         if (num % 2 != 0 && (num > 20 && num < 30))
         {
