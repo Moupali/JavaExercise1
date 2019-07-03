@@ -5,18 +5,23 @@ Input: A
 Output: Capital letter*/
 
 package com.stackroute.junitdemo;
-public class Check{
+public class Check
+{
 
 public static String checking(char ch)
         {
+
         if(ch>='A' && ch<='Z')
-        return "Capital Letter";
+            return "Capital Letter";//checking for capital letters
+
         else if(ch>='a'  && ch<='z')
-        return "Small Letter";
+           return "Small Letter"; //checking for small letters
+
         else if(ch>='0' && ch<='9')
-        return "Digits";
+
+            return "Digits";//checking for digits
         else
-        return "Special Character";
+            return "Special Character";//checking for character
         }
-        }
+}
 

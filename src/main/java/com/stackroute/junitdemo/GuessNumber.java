@@ -16,17 +16,20 @@ public class GuessNumber {
         String res;
 
         while (true) {
-            if (num == target) {
-                res = "FOUND";
-
-
-            } else if (num < target) {
-                res = "The number guessed is lesser than target";
-
-            } else {
+            if (num == target)  //if found
+            {
                 res = "The number is equal to target";
 
             }
+            else if (num < target) //if lesser
+            {
+                res = "The number guessed is lesser than target";
+            }
+            else
+                {
+                res = "The number guessed is greater than target";
+
+                }
 
             return res;
         }

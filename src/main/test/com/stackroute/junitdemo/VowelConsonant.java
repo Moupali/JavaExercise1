@@ -13,21 +13,26 @@ package com.stackroute.junitdemo;
 
 public class VowelConsonant
 {
-    public static String checkVowelConsonant(String word,int len) {
-        String res="";
+    public static String checkVowelConsonant(String word,int length)
+    {
+        String result=""; ///storing a null string
+
         for (int i = 0; i < len; i++)
         {
             char ch = word.charAt(i);
 
+            //checking vowels
             if (ch == 'A' || ch == 'a' || ch == 'E' || ch == 'e' || ch == 'I' || ch == 'i' || ch == 'O' || ch == 'o' || ch == 'U' || ch == 'u')
-                res=res+"Vowel";
+                result=result+"Vowel";
 
+            //checking error
             else if (ch >= 48 && ch <= 57)
-                res=res+"Error";
+                result=result+"Error";
+
             else
-                res=res+"Consonant";
+                result=result+"Consonant";//checking constant
         }
-        return res;
+        return result;
 
     }
 }
